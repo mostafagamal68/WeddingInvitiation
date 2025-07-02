@@ -1,0 +1,244 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background: #ffffff;
+    color: #000;
+    text-align: center;
+}
+
+/* Top Banner */
+.top-banner {
+    background-color: #2e6f5e;
+    color: white;
+    padding: 20px 0;
+    font-size: 24px;
+}
+
+/* Countdown Section */
+.countdown-section {
+/*    background-color: black;*/
+    background: url('../images/background.jpg') center/cover no-repeat;
+    color: white;
+    padding: 30px 10px 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+    .countdown-section::after {
+        content: '';
+        position: absolute;
+        bottom: -50px; /* Pulls the arc up */
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background-color: white; /* Color of the next section */
+        border-top-left-radius: 100% 50px;
+        border-top-right-radius: 100% 50px;
+        z-index: 1;
+    }
+
+    .countdown-section > * {
+        position: relative;
+        z-index: 2;
+    }
+
+.countdown-text {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.wedding-title {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.names {
+    font-size: 26px;
+    letter-spacing: 3px;
+    margin: 10px 0;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.countdown-box {
+    background-color: #2e6f5e;
+    padding: 12px 10px;
+    border-radius: 6px;
+    width: 70px;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.count {
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+    line-height: 1.2;
+}
+
+.label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1;
+    margin-top: 4px;
+}
+
+/* Invitation Card */
+.invitation-card {
+    background-color: #b6d1c4;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 350px;
+    border-radius: 12px;
+    padding: 20px 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    overflow: visible; /* <-- allow flower to show outside */
+    position: relative;
+    z-index: 2;
+}
+
+    .invitation-card::before {
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        border: 1.5px solid rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        pointer-events: none;
+        z-index: 1;
+    }
+
+.flower-decor {
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -60%); /* pull it up even more */
+    z-index: 5;
+}
+
+.ceremony-title {
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.couple-circle {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to top, #b6d1c4, #e7f0ec); /* soft green gradient */
+    border-radius: 50%;
+    margin: 20px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.couple-img {
+    max-width: 160px;
+    border-radius: 10px;
+    z-index: 3;
+}
+
+.details {
+    font-size: 14px;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+.details i {
+    margin-right: 8px;
+    color: #2e6f5e;
+}
+
+/* Responsive Typography and Layout */
+@media (max-width: 768px) {
+    .top-banner {
+        font-size: 20px;
+    }
+
+    .names {
+        font-size: 22px;
+    }
+
+    .wedding-title {
+        font-size: 20px;
+    }
+
+    .countdown-box {
+        width: 60px;
+        padding: 8px;
+    }
+
+    .count {
+        font-size: 18px;
+    }
+
+    .label {
+        font-size: 11px;
+    }
+
+    .details {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .names {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    .countdown {
+        gap: 10px;
+    }
+
+    .countdown-box {
+        width: 55px;
+        padding: 10px 6px;
+    }
+
+    .count {
+        font-size: 16px;
+    }
+
+    .label {
+        font-size: 9px;
+    }
+
+    .invitation-card {
+        padding: 15px 10px;
+    }
+}
+
+a:link {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+a:visited {
+    text-decoration: inherit;
+    color: inherit;
+}
