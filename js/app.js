@@ -1,27 +1,53 @@
-﻿const weddingDate = new Date("August 2, 2025 20:00:00").getTime();
+﻿//official wedding date and time is fifth of December 2026 and the wedding begins art 10:00 am.
+
+const weddingDate = new Date("December 5, 2026 10:00:00").getTime();
+
 
 function updateCountdown() {
     const now = new Date().getTime();
     const timeLeft = weddingDate - now;
 
+    const daysElement = document.getElementById("days");
+    const hoursElement = document.getElementById("hours");
+    const minutesElement = document.getElementById("minutes");
+    const secondsElement = document.getElementById("seconds");
+
     if (timeLeft <= 0) {
-        document.getElementById("days").innerHTML = "00";
-        document.getElementById("hours").innerHTML = "00";
-        document.getElementById("minutes").innerHTML = "00";
-        document.getElementById("seconds").innerHTML = "00";
+        daysElement.textContent = "00";
+        hoursElement.textContent = "00";
+        minutesElement.textContent = "00";
+        secondsElement.textContent = "00";
         return;
     }
 
-    const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+    const days = Math.floor(
+        timeLeft / (1000 * 60 * 60 * 24)
+    );
 
-    document.getElementById("days").innerHTML = String(days).padStart(2, "0");
-    document.getElementById("hours").innerHTML = String(hours).padStart(2, "0");
-    document.getElementById("minutes").innerHTML = String(minutes).padStart(2, "0");
-    document.getElementById("seconds").innerHTML = String(seconds).padStart(2, "0");
+    const hours = Math.floor(
+        (timeLeft % (1000 * 60 * 60 * 24)) /
+        (1000 * 60 * 60)
+    );
+
+    const minutes = Math.floor(
+        (timeLeft % (1000 * 60 * 60)) /
+        (1000 * 60)
+    );
+
+    const seconds = Math.floor(
+        (timeLeft % (1000 * 60)) /
+        1000
+    );
+
+    daysElement.textContent = String(days).padStart(2, "0");
+    hoursElement.textContent = String(hours).padStart(2, "0");
+    minutesElement.textContent = String(minutes).padStart(2, "0");
+    secondsElement.textContent = String(seconds).padStart(2, "0");
 }
 
-updateCountdown(); // Run immediately
-setInterval(updateCountdown, 1000); // Then every second
+
+//For running the countdown as soon as the page loads
+updateCountdown();
+
+// Update every second of the timer
+setInterval(updateCountdown, 1000);

@@ -1,64 +1,466 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="title" content="Mostafa & Manar Wedding">
-    <meta name="description" content="LET THE COUNT DOWN BEGIN !">
-    <meta property="og:title" content="Mostafa & Manar Wedding">
-    <meta property="og:description" content="LET THE COUNT DOWN BEGIN !">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1514446750685-c27ac87a4403?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-    <title>Mostafa & Manar Wedding</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="title" content="Kelvin & Michelle Wedding">
+    <meta name="description" content="Join Kelvin & Michelle as they celebrate their special day.">
+
+    <!-- Wedding Link Preview -->
+<meta property="og:title" content="Kelvin & Michelle | Wedding Invitation">
+
+<meta
+    property="og:description"
+    content="You are warmly invited to celebrate the wedding of Kelvin & Michelle. Join us for this beautiful and special day."
+>
+
+<meta
+    property="og:image"
+    content="https://kelvinweddinginvitation.vercel.app/images/Michelle-weds-Kelvin.jpg"
+>
+
+<meta
+    property="og:url"
+    content="https://kelvinweddinginvitation.vercel.app/"
+    
+>
+
+<meta property="og:type" content="website">
+
+<meta property="og:site_name" content="Kelvin & Michelle Wedding">
+
+<!-- Social Media Preview -->
+<meta name="twitter:card" content="summary_large_image">
+
+<meta
+    name="twitter:title"
+    content="Kelvin & Michelle | Wedding Invitation"
+>
+
+<meta
+    name="twitter:description"
+    content="You are warmly invited to celebrate the wedding of Kelvin & Michelle. Join us for this beautiful and special day."
+>
+
+<meta
+    name="twitter:image"
+    content="https://kelvinweddinginvitation.vercel.app/images/Michelle-weds-Kelvin.jpg"
+>
+
+    <meta property="og:title" content="Kelvin & Michelle Wedding">
+    <meta property="og:description" content="Join us as we celebrate our special day.">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1514446750685-c27ac87a4403?q=80&w=735&auto=format&fit=crop">
+
+    <title>Kelvin & Michelle | Wedding</title>
+
     <link rel="icon" href="images/wedding.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/app.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/app.css">
 </head>
 
 <body>
-    <div class="top-banner">
-        <h1>M & M</h1>
-    </div>
 
-    <div class="countdown-section">
-        <h4 class="countdown-text">LET THE COUNT DOWN BEGIN !</h4>
-        <h3 class="wedding-title">THE WEDDING</h3>
-        <h2 class="names">Mostafa & Manar</h2>
-        <div class="countdown">
-            <div class="countdown-box">
-                <span id="days" class="count">00</span>
-                <span class="label">DAYS</span>
-            </div>
-            <div class="countdown-box">
-                <span id="hours" class="count">00</span>
-                <span class="label">HOURS</span>
-            </div>
-            <div class="countdown-box">
-                <span id="minutes" class="count">00</span>
-                <span class="label">MINUTES</span>
-            </div>
-            <div class="countdown-box">
-                <span id="seconds" class="count">00</span>
-                <span class="label">SECONDS</span>
-            </div>
-        </div>
-    </div>
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
 
-    <div class="invitation-card">
-        <img src="images/flowers.png" class="flower-decor" alt="flowers" />
-        <h3 class="ceremony-title">WEDDING CEREMONY</h3>
-        <div class="couple-circle">
-            <img src="images/couple.png" alt="Couple" class="couple-img" />
+    <header class="navbar">
+
+        <div class="nav-logo">
+            K <span>&</span> M
         </div>
-        <p class="details">
-            <i class="fa-regular fa-calendar-days"></i> Saturday, August 2nd 2025<br />
-            <i class="fa-regular fa-clock"></i> 08.00 PM<br />
-            <i class="fa-solid fa-location-dot"></i><a href="https://maps.app.goo.gl/pWon5H1tvUChBQXYA"> Hayat halls, El
-                montazah </a>
+
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#story">Our Day</a>
+            <a href="#venues">Venues</a>
+        </nav>
+
+        <a href="#venues" class="nav-button">
+            View Details
+        </a>
+
+    </header>
+
+
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    ✦ WE ARE GETTING MARRIED ✦
+                </p>
+
+                <h1>
+                    Kelvin
+                    <span>&</span>
+                    Michelle
+                </h1>
+
+                <p class="hero-date">
+                    December 5, 2026
+                </p>
+
+                <div class="hero-divider">
+                    <span></span>
+                    ❦
+                    <span></span>
+                </div>
+
+                <p class="hero-message">
+                    Two hearts, one beautiful journey,
+                    and a lifetime of memories waiting to be made.
+                </p>
+
+                <a href="#countdown" class="hero-button">
+                    Begin the celebration
+                    <i class="fa-solid fa-arrow-down"></i>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             COUNTDOWN
+        ========================== -->
+
+        <section class="countdown-section" id="countdown">
+
+            <div class="section-heading">
+
+                <p class="eyebrow dark">
+                    THE BIG DAY IS COMING
+                </p>
+
+                <h2>
+                    Let the countdown begin
+                </h2>
+
+                <p>
+                    We cannot wait to celebrate this beautiful moment with you.
+                </p>
+
+            </div>
+
+
+            <div class="countdown">
+
+                <div class="countdown-box">
+                    <span id="days" class="count">00</span>
+                    <span class="label">Days</span>
+                </div>
+
+                <div class="countdown-box">
+                    <span id="hours" class="count">00</span>
+                    <span class="label">Hours</span>
+                </div>
+
+                <div class="countdown-box">
+                    <span id="minutes" class="count">00</span>
+                    <span class="label">Minutes</span>
+                </div>
+
+                <div class="countdown-box">
+                    <span id="seconds" class="count">00</span>
+                    <span class="label">Seconds</span>
+                </div>
+
+            </div>
+
+            <p class="countdown-date">
+                Saturday · December 5 · 2026
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             OUR DAY
+        ========================== -->
+
+        <section class="story-section" id="story">
+
+            <div class="story-image">
+
+                <img src="images/Michelle-weds-Kelvin.jpg"
+                    alt="Kelvin and Michelle">
+
+            </div>
+
+            <div class="story-content">
+
+                <p class="eyebrow dark">
+                    OUR SPECIAL DAY
+                </p>
+
+                <h2>
+                    A moment worth
+                    <em>celebrating.</em>
+                </h2>
+
+                <p>
+                    With joyful hearts, we invite you to join us as we
+                    begin a beautiful new chapter together.
+                </p>
+
+                <p>
+                    Your presence will make our special day even more
+                    meaningful as we celebrate love, family, friendship,
+                    and the beginning of forever.
+                </p>
+
+                <div class="signature">
+                    Kelvin <span>&</span> Michelle
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             VENUES
+        ========================== -->
+
+        <section class="venues-section" id="venues">
+
+            <div class="section-heading">
+
+                <p class="eyebrow dark">
+                    JOIN US
+                </p>
+
+                <h2>
+                    The celebration
+                </h2>
+
+                <p>
+                    Two beautiful moments. One unforgettable day.
+                </p>
+
+            </div>
+
+
+            <div class="venues-container">
+
+
+                <!-- CEREMONY -->
+
+                <article class="venue-card">
+
+                    <div class="venue-top">
+                        <span class="venue-number">
+                            01
+                        </span>
+
+                        <div class="venue-icon">
+                            <i class="fa-solid fa-church"></i>
+                        </div>
+                    </div>
+
+                    <div class="venue-content">
+
+                        <p class="venue-type">
+                            THE CEREMONY
+                        </p>
+
+                        <h3>
+                            Wedding Ceremony
+                        </h3>
+
+                        <div class="venue-divider">
+                            ❦
+                        </div>
+
+                        <div class="venue-detail">
+                            <i class="fa-regular fa-calendar"></i>
+                            <span>
+                                Saturday, December 5th 2026
+                            </span>
+                        </div>
+
+                        <div class="venue-detail">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>
+                                10:00 AM
+                            </span>
+                        </div>
+
+                        <div class="venue-detail">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>
+                                Full Gospel Tumaini
+                            </span>
+                        </div>
+
+                        <a href="https://share.google/atCDsYt4VpsgcvUzo"
+                            class="venue-link"
+                            target="_blank">
+
+                            View Location
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- RECEPTION -->
+
+                <article class="venue-card reception-card">
+
+                    <div class="venue-top">
+                        <span class="venue-number">
+                            02
+                        </span>
+
+                        <div class="venue-icon">
+                            <i class="fa-solid fa-champagne-glasses"></i>
+                        </div>
+                    </div>
+
+                    <div class="venue-content">
+
+                        <p class="venue-type">
+                            THE CELEBRATION
+                        </p>
+
+                        <h3>
+                            Reception
+                        </h3>
+
+                        <div class="venue-divider">
+                            ❦
+                        </div>
+
+                        <div class="venue-detail">
+                            <i class="fa-regular fa-calendar"></i>
+                            <span>
+                                Saturday, December 5th 2026
+                            </span>
+                        </div>
+
+                        <div class="venue-detail">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>
+                                12:30 PM
+                            </span>
+                        </div>
+
+                        <div class="venue-detail">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>
+                               Sukari Presbyterian Academy
+                            </span>
+                        </div>
+
+                        <a href="https://share.google/eHAeO1QBBdPp2B855"
+                            class="venue-link"
+                            target="_blank">
+
+                            View Location
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CLOSING MESSAGE
+        ========================== -->
+
+        <section class="closing-section">
+
+            <div class="closing-overlay"></div>
+
+            <div class="closing-content">
+
+                <p class="eyebrow">
+                    WITH LOVE
+                </p>
+
+                <h2>
+                    We can't wait
+                    <br>
+                    to celebrate with you.
+                </h2>
+
+                <div class="hero-divider">
+                    <span></span>
+                    ❦
+                    <span></span>
+                </div>
+
+                <p>
+                    Kelvin & Michelle
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-logo">
+            K <span>&</span> M
+        </div>
+
+        <p>
+            With love, Kelvin & Michelle
         </p>
-    </div>
+
+        <small>
+            December 5, 2026
+        </small>
+
+    </footer>
+
+
+    <!-- JavaScript -->
     <script src="js/app.js"></script>
+
 </body>
 
 </html>
